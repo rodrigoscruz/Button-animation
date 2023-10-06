@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Button</title>
+
+		<style>
+			body {
+				background-color: #333;
+			}
+
+			:root {
+				--dark-color:  #037fff;
+				--light-color:  #03e5ff;
+			}
+
+			svg {
+				cursor:  pointer;
+				height: 500px;
+  				width: 50%;
+  				margin-top: 5%;
+  				margin-left: 30%;
+			}
+
+			#darkGroup {
+				fill: var(--dark-color);
+			}
+
+			#lightGroup {
+				fill: var(--light-color);
+			}
+
+			#dark1,
+			#light1,
+			#dark2 {
+				transition: all 1s ease;
+			}
+			#dark2 {
+				transform: translateX(-100%);
+			}
+			svg:hover #light1 {
+				transform: translateX(20%);
+			}
+			svg:hover #dark1 {
+				transform: translateX(40%);
+				opacity: 0;
+			}
+			svg:hover #dark2 {
+				transform: translateX(5%);
+			}
+
+		</style>
+
+	</head>
+	<body>
+
+		<svg width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<a href="https://github.com/rodrigoscruz"> 
+			<g id="Frame 1" clip-path="url(#clip0_1_7)">
+			<g id="darkGroup">
+				<path 
+				id="dark2" 
+				d="M68.2335 49.7991C69.5719 50.5547 69.5847 52.4791 68.2565 53.2631L18.2021 82.8093C16.8739 83.5933 15.201 82.6488 15.1907 81.1092L14.8053 23.0868C14.7951 21.5473 16.4553 20.5673 17.7936 21.3229L68.2335 49.7991Z" fill-opacity="0.7"/>
+				<path 
+				id="dark1" 
+				d="M85.4512 49.7752C86.7896 50.5308 86.8024 52.4552 85.4743 53.2392L35.4198 82.7854C34.0917 83.5694 32.4187 82.6249 32.4085 81.0853L32.0231 23.0629C32.0128 21.5233 33.673 20.5434 35.0114 21.2989L85.4512 49.7752Z" fill-opacity="0.7"/>	</g>
+			<g id="lightGroup">
+				<path 
+				id="light1" 
+				d="M68.2335 49.7991C69.5719 50.5547 69.5847 52.4791 68.2565 53.2631L18.2021 82.8093C16.8739 83.5933 15.201 82.6488 15.1907 81.1092L14.8053 23.0868C14.7951 21.5473 16.4553 20.5673 17.7936 21.3229L68.2335 49.7991Z" fill-opacity="0.7"/>
+			</g>
+			</g>
+			<defs>
+				<clipPath id="clip0_1_7">
+					<rect width="120" height="100" fill="white"/>
+				</clipPath>
+			</defs>
+		</a>
+		</svg>
+
+	</body>
+</html>
